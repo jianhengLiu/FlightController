@@ -55,14 +55,13 @@ function sysCall_init()
 
 
     --
-    vector_h = sim.getObjectHandle('vector')
-    testVector_h = sim.getObjectHandle('testVector')
     visionSensor_h = sim.getObjectHandle('Vision_sensor')
+    imu_handle = sim.getObjectHandle('IMU_link')
 
     if simROS then
-        imu_handle = sim.getObjectHandle('IMU_link')
+
         revsSub = simROS.subscribe('/rotorRevs', 'std_msgs/Float64MultiArray', 'rotorRevs_cb')
-        rotorRevs={0,0,0,0}
+
 
         Gyro_pub = simROS.advertise('/imu', 'sensor_msgs/Imu')
         simROS.publisherTreatUInt8ArrayAsString(Gyro_pub)
@@ -76,13 +75,7 @@ function sysCall_init()
         accelCommunicationTube = sim.tubeOpen(0, 'accelerometerData' .. sim.getNameSuffix(nil), 1)
     end
 
-    errorX = 0
-    errorY = 0
-    errorZ = 0
-    error1 = 0
-    error2 = 0
-    error3 = 0
-    error4 = 0
+    rotorRevs={0,0,0,0}
 
     initTime = sim.getSimulationTime()
 
