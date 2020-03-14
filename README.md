@@ -2,7 +2,7 @@
 
 基于ROS、C++和coppeliaSim的四旋翼无人机控制仿真模型
 
- [quadcopterController-2020-03-15_01.15.56.mkv](/home/chrisliu/GitRepositories/FlightController/videos/quadcopterController-2020-03-15_01.15.56.mkv) 
+ [quadcopterController-2020-03-15_01.15.56.mkv](./videos/quadcopterController-2020-03-15_01.15.56.mkv) 
 
 
 
