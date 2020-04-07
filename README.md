@@ -1,6 +1,7 @@
 # FlightController
 
-基于ROS、C++和coppeliaSim的四旋翼无人机控制仿真模型
+基于ROS，C ++和coppeliaSim的四旋翼无人机控制仿真模型
+采用动力学模型重构的控制器，计算升力f以及力矩M，并通过控制分配矩阵控制各电机转速，实现无人机控制
 
  [quadcopterController-2020-03-15_01.15.56.mkv](./videos/quadcopterController-2020-03-15_01.15.56.mkv) 
 
